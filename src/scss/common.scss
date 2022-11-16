@@ -1,0 +1,42 @@
+// Заголовки, общие БЄМ блоки и проче...
+._footer-title {
+    color: #000000;
+    font-weight: 700;
+    @include adaptiveValue("font-size", 24, 20);
+    line-height: calc(29 / 24 * 100%);
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    text-decoration: none;
+    /*color: #FFFFFF;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 150%;
+		background: #E89F71;
+		padding: 24px 140px 24px 140px;
+		&:hover {
+			text-decoration: underline;
+		}*/
+    &_white {
+        color: $orangeColor;
+        background-color: #fff;
+        &:hover {
+            color: $orangeColor;
+            background-color: #fff;
+        }
+    }
+}
+
+._title {
+    @include adaptiveValue("font-size", 40, 24);
+	font-weight: 700;
+	line-height: 120%;
+    text-align: center;
+}
